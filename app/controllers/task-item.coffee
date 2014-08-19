@@ -3,8 +3,6 @@
 
 TaskItemController = Ember.ObjectController.extend(Editable,
   editableField: 'title'
-  needs: ['currentUser']
-  currentUser: Ember.computed.alias('controllers.currentUser.content')
 
   guid: (->
     Ember.guidFor(this)

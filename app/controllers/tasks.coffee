@@ -1,7 +1,6 @@
 `import Ember from 'ember'`
 
 TasksController = Ember.ArrayController.extend(new Ember.Pushable('task'),
-  needs: ['currentUser']
   queryParams: ['filter']
   filter: null
 

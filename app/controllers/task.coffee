@@ -1,7 +1,6 @@
 `import Ember from 'ember'`
 
 TaskController = Ember.ObjectController.extend(new Ember.Pushable('comment'),
-  needs: ['currentUser']
   newCommentBody: ''
 
   actions:

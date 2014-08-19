@@ -3,7 +3,7 @@
 
 ApplicationRoute = Ember.Route.extend(ApplicationRouteMixin,
   beforeModel: ->
-    @controllerFor('currentUser').sync()
+    @get('currentUser').sync()
 
   actions:
     authenticateSession: ->
@@ -11,10 +11,10 @@ ApplicationRoute = Ember.Route.extend(ApplicationRouteMixin,
 
     sessionAuthenticationSucceeded: ->
       @_super.apply(this, arguments)
-      @controllerFor('currentUser').sync()
+      @get('currentUser').sync()
 
     sessionInvalidationSucceeded: ->
-      @controllerFor('currentUser').logout()
+      @get('currentUser').logout()
       @_super.apply(this, arguments)
 )
 
