@@ -14,5 +14,6 @@ Router.map ->
   )
   @route('hall-of-fame')
   @route('stats')
+  @route('badges')
 
 `export default Router`

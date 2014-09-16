@@ -19,6 +19,10 @@ aside
         i class="fa fa-bar-chart-o"
         br
         | Stats
+      link-to "badges" tagName="li"
+        i class="fa fa-tags"
+        br
+        | Badges
       li{action "invalidateSession"}
         i class="fa fa-sign-out"
         br
