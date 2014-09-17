@@ -6,7 +6,7 @@ BadgesController = Ember.ArrayController.extend
   # deletionsSorting: ['numberOfDeletions:desc']
   # reviewsSorting: ['pullRequestReviewsCount:desc']
   # completedTasksSorting: ['completedTasksCount:desc']
-  # badgesSorting: ['badgesCount:desc']
+  badgesSorting: ['badgesCount:desc']
   # pullRequestStats: Ember.computed.sort('content', 'pullRequestsSorting')
   # additionStats: Ember.computed.sort('content', 'additionsSorting')
   # deletionStats: Ember.computed.sort('content', 'deletionsSorting')
