@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from './authenticated'`
+`import Ember from 'ember'`
 
-IndexRoute = AuthenticatedRoute.extend
+IndexRoute = Ember.Route.extend
   beforeModel: (transition) ->
     @transitionTo('tasks')
     @_super(transition)

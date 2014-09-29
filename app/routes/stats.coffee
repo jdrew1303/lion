@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from './authenticated'`
+`import Ember from 'ember'`
 
-StatsRoute = AuthenticatedRoute.extend
+StatsRoute = Ember.Route.extend
   model: ->
     @store.find('stats')
 

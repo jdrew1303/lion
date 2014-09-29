@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from './authenticated'`
+`import Ember from 'ember'`
 
-TasksRoute = AuthenticatedRoute.extend
+TasksRoute = Ember.Route.extend
   beforeModel: (transition) ->
     Notify.requestPermission() if Notify.isSupported && Notify.needsPermission
 

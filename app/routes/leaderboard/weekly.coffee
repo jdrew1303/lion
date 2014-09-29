@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from '../authenticated'`
+`import Ember from 'ember'`
 
-LeaderboardWeeklyRoute = AuthenticatedRoute.extend
+LeaderboardWeeklyRoute = Ember.Route.extend
   setupController: ->
     @_super.apply(this, arguments)
 

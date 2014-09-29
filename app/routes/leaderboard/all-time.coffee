@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from '../authenticated'`
+`import Ember from 'ember'`
 
-LeaderboardAllTimeRoute = AuthenticatedRoute.extend
+LeaderboardAllTimeRoute = Ember.Route.extend
   setupController: ->
     @_super.apply(this, arguments)
 

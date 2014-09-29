@@ -1,7 +1,6 @@
 `import Ember from 'ember'`
-`import AuthenticatedRoute from './authenticated'`
 
-TaskRoute = AuthenticatedRoute.extend
+TaskRoute = Ember.Route.extend
   beforeModel: (transition) ->
     Ember.run.scheduleOnce('afterRender', this, =>
       taskItem = Ember.$(".#{@get('controller.id')}")

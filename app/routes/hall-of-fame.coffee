@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from './authenticated'`
+`import Ember from 'ember'`
 
-HallOfFameRoute = AuthenticatedRoute.extend
+HallOfFameRoute = Ember.Route.extend
   model: ->
     @store.find('weeklyWinning')
 

@@ -1,6 +1,6 @@
-`import AuthenticatedRoute from '../authenticated'`
+`import Ember from 'ember'`
 
-LeaderboardIndexRoute = AuthenticatedRoute.extend
+LeaderboardIndexRoute = Ember.Route.extend
   beforeModel: (transition) ->
     @transitionTo('leaderboard.weekly')
     @_super(transition)
