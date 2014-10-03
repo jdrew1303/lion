@@ -1,2 +1,27 @@
-section.badges
-  h1 Badges
+section.stats
+  header
+    h1 Badges
+
+  section.pull-requests
+    h3
+      img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f3c6.png"
+
+    view "user-stats" content=trophyBadges pointsProperty="trophyCount" avatarUrlProperty="avatarUrl"
+
+  section.reviews
+    h3
+      img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f483.png"
+
+    view "user-stats" content=dancerBadges pointsProperty="dancerCount" avatarUrlProperty="avatarUrl"
+
+  section.tasks
+    h3
+      img src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b50.png"
+
+    view "user-stats" content=starBadges pointsProperty="starCount" avatarUrlProperty="avatarUrl"
+
+  section.additions
+    h3
+      img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4af.png"
+
+    view "user-stats" content=oneHundredBadges pointsProperty="oneHundredCount" avatarUrlProperty="avatarUrl"

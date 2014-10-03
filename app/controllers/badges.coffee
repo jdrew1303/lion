@@ -1,17 +1,13 @@
 `import Ember from 'ember'`
 
 BadgesController = Ember.ArrayController.extend
-  # pullRequestsSorting: ['pullRequestsCount:desc']
-  # additionsSorting: ['numberOfAdditions:desc']
-  # deletionsSorting: ['numberOfDeletions:desc']
-  # reviewsSorting: ['pullRequestReviewsCount:desc']
-  # completedTasksSorting: ['completedTasksCount:desc']
-  badgesSorting: ['badgesCount:desc']
-  # pullRequestStats: Ember.computed.sort('content', 'pullRequestsSorting')
-  # additionStats: Ember.computed.sort('content', 'additionsSorting')
-  # deletionStats: Ember.computed.sort('content', 'deletionsSorting')
-  # reviewStats: Ember.computed.sort('content', 'reviewsSorting')
-  # completedTasksStats: Ember.computed.sort('content', 'completedTasksSorting')
-  # badgeStats: Ember.computed.sort('content', 'badgesSorting')
-
+  trophySorting: ['trophyCount:desc']
+  dancerSorting: ['dancerCount:desc']
+  starSorting: ['starCount:desc']
+  oneHundredSorting: ['oneHundredCount:desc']
+  trophyFilter: []
+  trophyBadges: Ember.computed.sort('content', 'trophySorting')
+  dancerBadges: Ember.computed.sort('content', 'dancerSorting')
+  starBadges: Ember.computed.sort('content', 'starSorting')
+  oneHundredBadges: Ember.computed.sort('content', 'oneHundredSorting')
 `export default BadgesController`
