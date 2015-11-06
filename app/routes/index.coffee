@@ -2,7 +2,7 @@
 
 IndexRoute = AuthenticatedRoute.extend
   beforeModel: (transition) ->
-    @transitionTo('tasks')
+    @transitionTo('leaderboard')
     @_super(transition)
 
 `export default IndexRoute`

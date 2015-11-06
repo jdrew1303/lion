@@ -17,19 +17,6 @@ main > .content
 section.hall-of-fame, section.leaderboard
   +grid-column($columns: 8)
 
-section.tasks
-  & > header
-    +grid-row
-
-    & > div
-      +grid-column($columns: 7)
-
-  & > section.content
-    +grid-row($behavior: nest)
-
-    & > ul
-      +grid-column($columns: 7)
-
 section.stats
   +grid-column($columns: 12)
 

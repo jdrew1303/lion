@@ -5,9 +5,6 @@ Router = Ember.Router.extend
 
 Router.map ->
   @route('login')
-  @resource('tasks', ->
-    @resource('task', path: ':task_id')
-  )
   @resource('leaderboard', ->
     @route('all-time')
     @route('weekly')

@@ -11,11 +11,6 @@ section.stats
 
     view "user-stats" content=reviewStats pointsProperty="pullRequestReviewsCount" avatarUrlProperty="avatarUrl"
 
-  section.tasks
-    h3 Completed Tasks
-
-    view "user-stats" content=completedTasksStats pointsProperty="completedTasksCount" avatarUrlProperty="avatarUrl"
-
   section.additions
     h3 Additions
 
