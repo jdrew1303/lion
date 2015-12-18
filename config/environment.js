@@ -30,10 +30,10 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline'",
-      'font-src': "'self'",
+      'font-src': "'self' data:",
       'connect-src': "'self' localhost:3000 as-lion-api.herokuapp.com",
       'img-src': "'self' avatars.githubusercontent.com",
-      'style-src': "'self' 'unsafe-inline'",
+      'style-src': "'self' 'unsafe-inline' use.fonticons.com",
       'media-src': "'self'"
     }
   };
